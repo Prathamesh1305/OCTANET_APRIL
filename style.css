@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+section {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("landingpage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  width: 85%;
+  margin: auto;
+}
+nav {
+  height: 80px;
+}
+nav h1 {
+  font-family: "Poppins", sans-serif "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  float: left;
+  line-height: 80px;
+  font-size: 15px;
+  font-size: inline;
+  color: #eb7620;
+  font-weight: 200;
+  letter-spacing: 0.5em;
+}
+nav h1:hover {
+  transition: ease-in-out;
+  text-shadow: rgb(254, 254, 253) 1px 0 10px;
+  transform: scale(0.9);
+}
+
+nav ul {
+  float: right;
+  line-height: 80px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 5px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 7px 8px;
+}
+nav ul li a:hover {
+  color: #017143;
+  padding-top: 0px;
+  size: 15px;
+  transition: all 0.7s ease;
+  transform: scale(0.9);
+  border-bottom: 3px solid #017143;
+}
+nav ul li .active {
+  background-color: #eb7620;
+}
+.artical  {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  transform: translateY(25vh);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.artical h1 {
+  font-size: 36px;
+  color: #fff;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  position: relative;
+  
+}
+.artical::before{
+  content: attr(data-text);
+  position: absolute;
+  color: var(--clr);
+  width: 0;
+  overflow: hidden;
+  transition: 1s;
+  border-right: 8px solid var(--clr);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+.artical p {
+  color: yellow;
+}
+
+.artical h4 {
+  color: #fff;
+  margin: 25px;
+  font-size: xx-large;
+}
+.artical .btn {
+  color: #fff;
+  padding: 12px 30px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #f15048;
+  float: right;
+  animation: slideout 1.5s steps(60) infinite;
+  
+}
+@keyframes slideout {
+  50% {
+    left: 50%;
+    margin: 0 30px 0 15px;
+  }
+}
+
+.artical .btn:hover {
+  background-color: red;
+  transition: ease-out;
+  box-shadow: 12px 5px 30px 10px rgba(255, 55, 0, 0.2);
+  transform: scale(0.9);
+}
+footer {
+  background-color: darkgray;
+  text-align: center;
+  padding: 10px 12px;
+}
+h3 a img{
+  float: left;
+}
+
+.icon ul li {
+  list-style: none;
+  float: right;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.icon ul li:hover {
+  transition: ease-out;
+  transform: scale(1.2);
+  box-shadow: 2px 0px 30px 4px rgb(89, 161, 232);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
